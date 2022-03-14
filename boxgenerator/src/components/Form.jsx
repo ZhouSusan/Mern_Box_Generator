@@ -21,15 +21,6 @@ const Form = (props) => {
         {/* When the user clicks on Add button, it will trigger the onSubmit which will use the CreateBox function, which is where we have access to the new box color  */}
           <button>Add</button>
         </form>
-          {/* //we use a map() to list out the elements from an array.// we use flex, to make the boxes go side by side */}
-          <div style={{display:"flex"}}>
-          {
-            boxes.map((color, i) => {
-              return <div key={i} style={{backgroundColor: color, width: 200, height: 200, marginRight: 10}}>
-              </div>
-            })
-          }
-        </div>
     </div>
     );
 }
