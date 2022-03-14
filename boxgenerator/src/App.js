@@ -3,9 +3,12 @@ import './App.css';
 import Form from "./components/Form";
 
 function App() {
+  const [boxes, setBoxes] = useState([]);
+  const [boxColor, setBoxColor] = useState("");
+
   return (
     <div className="App">
-      <Form />
+      <Form boxes = {boxes} setBoxes={setBoxes} boxColor={boxColor} setBoxColor={setBoxColor}/>
     </div>
   );
 }
